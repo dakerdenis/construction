@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
 *,
 *::before,
 *::after {
@@ -37,4 +38,254 @@ body {
     padding: 0;
     margin: 0;
     border: 0;
+}
+.main_wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.header__wrapper {
+    height: 160px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.address_phone_block {
+    width: 100%;
+    height: 40px;
+    background-color: #818181;
+    color: #ffffff;
+    font-size: 16px;
+}
+.address_phone_block-wrapper{
+    max-width:  73%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.address_block {
+}
+.phone__block {
+}
+.header__block {
+
+    background-color: #fff;
+    height: 120px;
+
+}
+.header__block_wrapper{
+    max-width: 73%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+.header_logo_img {
+    background-color: #FFE9AF;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.header_logo_name {
+    line-height: 64px;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.navigation_header {
+    display: flex;
+}
+.nav__block {
+    display: block;
+    margin-left: 40px;
+}
+.nav__block-a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+.promo__block {
+    background-color: #FCF4E4;
+    width: 100%;
+    height: 100vh;
+}
+.catalog__wrapper {
+    width: 100%;
+    padding-top: 134px;
+}
+.catalog__name_desc {
+    max-width: 73%;
+    margin: 0 auto;
+
+}
+.catalog__name_desc_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catalog_name {
+    font-size: 36px;
+    font-weight: 700;
+}
+.catalog_name-p {
+
+}
+.catalog__desc {
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 60%;
+
+}
+.catalog__desc-p {
+    line-height: 25.2px;
+    font-size: 14px;
+
+}
+.catalog__items__wrapper {
+
+    max-width: 73%;
+    margin: 0 auto;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px;
+}
+.catalog__item:nth-child(1) {
+    margin-right: 30px;
+
+}
+.catalog__item:not(first-child){
+    margin-right: 30px;
+}
+.catalog__item{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog_item_image {
+    background-color: #D9D9D9;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+
+}
+.catalog_item_image-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+.catalog_item_image-more img {
+    width: 35px;
+    height: 25px;
+}
+.catalog_item_name {
+    margin-top: 10px ;
+    line-height: 30px;
+    size: 18px;
+}
+.about_us___wrapper {
+    background-color: #FAFAFA;
+    width: 100%;
+}
+.about_us__wrapper_wrap{
+    max-width: 73%;
+    margin: 0 auto;
+}
+.about_us__name {
+    font-weight: 700;
+    font-size: 36px;
+
+}
+.about_us__foto_desc_wrap {
+}
+.about__us__photo {
+    background-color: #D9D9D9;
+    height: 350px;
+    max-width: 40%;
+}
+.about__us__text {
+}
+.about__us__text-p {
+}
+.about__us__text-button {
+}
+.about__us__connect-a {
+}
+.work_with_wrapper {
+}
+.work_with_elements_wrapper {
+}
+.work__element {
+}
+.work__element_desc {
+}
+.make_order__wrapper {
+}
+.make_order__name {
+}
+.make_order__desc {
+}
+.make_order__images {
+}
+.make_order__image {
+}
+.make_order__image-img {
+}
+.contact_with_us__wrapper {
+}
+.contact__with_us_name {
+}
+.contact__with_us_desc {
+}
+.contact__with_us_data {
+}
+.contact__with_us_data-numbers {
+}
+.contact__with_us_data-numbers-p {
+}
+.contact__with_us_data-numbers-p2 {
+}
+.contact__with_us_data-adress {
+}
+.contact__with_us_data-p {
+}
+.contact__with_us_data-social {
+}
+.contact__with_us_data-social_block {
+}
+.contact__with_us_form {
+}
+.contact__with_us_form-form {
+}
+.contact__form_name {
+}
+.contact__form-info {
+}
+.contact__form-info_input {
+}
+.contact__form-message {
+}
+.contact__form-button {
+}
+.footer__wrapper {
+}
+.footer__content {
+}
+.footer__legacy_wrap {
+}
+.footer__element {
+}
+.footer__element-created_by {
 }
