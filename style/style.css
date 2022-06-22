@@ -114,11 +114,15 @@ body {
 .promo__block {
     background-color: #FCF4E4;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .catalog__wrapper {
     width: 100%;
     padding-top: 134px;
+    padding-bottom: 100px;
 }
 .catalog__name_desc {
     max-width: 73%;
@@ -198,6 +202,7 @@ body {
 .about_us___wrapper {
     background-color: #FAFAFA;
     width: 100%;
+    padding-bottom: 110px;
 }
 .about_us__wrapper_wrap{
     max-width: 73%;
@@ -206,40 +211,102 @@ body {
 .about_us__name {
     font-weight: 700;
     font-size: 36px;
-
+    width: 100%;
+    text-align: center;
+    padding-top: 65px;
+    margin-bottom: 65px;
 }
 .about_us__foto_desc_wrap {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .about__us__photo {
     background-color: #D9D9D9;
-    height: 350px;
-    max-width: 40%;
+    height: 490px;
+    width: 40%;
 }
 .about__us__text {
+    width: 50% ;
+    line-height: 32px;
+    font-size: 16px;
 }
 .about__us__text-p {
 }
-.about__us__text-button {
+.about__us__text-button{
+    margin-top: 34px;
+}
+
+.about__us__text-button a{
+    background: rgba(168, 168, 168, 1);
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 600;
+    padding: 5px 40px 5px 40px;
+    color: #fff;
+
 }
 .about__us__connect-a {
 }
 .work_with_wrapper {
+    background-color: #FEF9EE;
+    width: 100%;
+    padding-top: 53px;
+    padding-bottom: 53px;
 }
 .work_with_elements_wrapper {
+    max-width: 79%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 .work__element {
+    max-width: 250px;
+    line-height: 22px;
+    font-size: 14px;
 }
 .work__element_desc {
+    line-height: 37px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.work__element  span{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22.5px;
 }
 .make_order__wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 80px;
+}
+.make_order__wrapper-wrap{
+    max-width: 73%;
+    margin: 0 auto;
 }
 .make_order__name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 75px;
+    margin-bottom: 33px;
+    width: 100%;
+    text-align: center;
 }
 .make_order__desc {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
 }
 .make_order__images {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 45px;
 }
 .make_order__image {
+    border-radius: 19px;
+    overflow: hidden;
 }
 .make_order__image-img {
 }
