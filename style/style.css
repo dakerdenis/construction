@@ -311,6 +311,8 @@ body {
 .make_order__image-img {
 }
 .contact_with_us__wrapper {
+    width: 100%;
+    background-color: #FAFAFA;
 }
 .contact__with_us_name {
 }
