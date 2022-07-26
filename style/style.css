@@ -281,9 +281,9 @@ body {
 .about__us__photo {
 
 
-    height: 490px;
+    height: 50vh;
     width: 40%;
-    background-image: url('img/12.png');
+    background-image: url('/img/12.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -300,18 +300,22 @@ body {
 }
 
 .about__us__text-button a{
-    background: rgba(168, 168, 168, 1);
-    font-size: 18px;
-    line-height: 29px;
-    font-weight: 600;
-    padding: 5px 40px 5px 40px;
-    color: #fff;
+
 
 }
 .about__us__connect-a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+    padding: 5px 40px 5px 40px;
+    font-style: normal;
+    border-radius: 5px;
+    background-color: #F55B14;
+    color: #fff;
 }
 .work_with_wrapper {
-    background-color: #FEF9EE;
+    background-color: #041332;
+    color: #fff;
     width: 100%;
     padding-top: 53px;
     padding-bottom: 53px;
@@ -328,9 +332,20 @@ body {
     font-size: 14px;
 }
 .work__element_desc {
+
     line-height: 37px;
     font-size: 30px;
     font-weight: 700;
+    position: relative;
+}
+.work__element_desc::before{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 10%;
+    width: 3px;
+    height: 25px;
+    background-color: #F55B14;
 }
 .work__element  span{
     font-weight: 700;
@@ -374,7 +389,7 @@ body {
 }
 .contact_with_us__wrapper {
     width: 100%;
-    background-color: #FAFAFA;
+
 }
 .contact__with_us_name {
 }
