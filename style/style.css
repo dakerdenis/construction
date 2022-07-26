@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800;900&display=swap');
 *,
 *::before,
 *::after {
@@ -43,6 +43,8 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
 }
 .header__wrapper {
     height: 160px;
@@ -128,23 +130,46 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: calc(100vh - 160px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 .promo__block_background{
     width: 100%;
     height: 100%;
     background-color: rgba(4, 13, 52, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*******PROMO***************/
 .promo__block_container {
+
+    color: #fff;
+    width: 605px;
 }
 .promo__block_desc {
+    font-size: 64px;
+    font-weight: 900;
+    line-height:70.4px;
 }
 .promo__block__text {
+    font-size: 14px;
+    line-height: 25.2px;
+    text-align: justify;
+    margin-top: 37px;
 }
 .promo__block__button {
+    margin-top: 5%;
+}
+.promo__block__button  a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+    padding: 5px 40px 5px 40px;
+    font-style: normal;
+    border-radius: 5px;
+    background-color: #F55B14;
+    color: #fff;
+
 }
 /*********PROMO*************/
 .catalog__wrapper {
