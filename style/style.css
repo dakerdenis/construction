@@ -687,6 +687,7 @@ textarea:-ms-input-placeholder {
     line-height: 180%;
     color: #fff;
     padding: 5px 40px 5px 40px;
+    cursor: pointer;
 }
 
 .footer__wrapper {}
