@@ -690,12 +690,31 @@ textarea:-ms-input-placeholder {
     cursor: pointer;
 }
 
-.footer__wrapper {}
-
-.footer__content {}
-
-.footer__legacy_wrap {}
-
-.footer__element {}
-
-.footer__element-created_by {}
+.footer__wrapper {
+}
+.footer__content {
+}
+.footer__logo__container {
+}
+.footer__logo_block {
+}
+.footer__navigation {
+}
+.footer__navigation_name__container {
+}
+.footer__navigation_name_border {
+}
+.footer__navigation__list {
+}
+.footer__navigation__list_element {
+}
+.footer__best_sellers {
+}
+.footer__bestsellers__wrapper {
+}
+.footer__legacy_wrap {
+}
+.footer__element {
+}
+.footer__element-created_by {
+}
