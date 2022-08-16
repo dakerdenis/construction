@@ -43,7 +43,7 @@ body {
     -webkit-text-size-adjust: 100%;
     font-family: "Montserrat", sans-serif;
 
-
+    background-color: #FAFAFA;
 }
 
 
@@ -58,7 +58,7 @@ body {
 .header__wrapper {
     height: 160px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #fff;
 }
 
 .address_phone_block {
@@ -141,6 +141,7 @@ body {
     color: #000;
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .nav__block-a:hover {
@@ -691,28 +692,84 @@ textarea:-ms-input-placeholder {
 }
 
 .footer__wrapper {
+    margin-top: 55px;
+    width: 100%;
+    background-color: #020E28;
 }
 .footer__content {
+    max-width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+
 }
 .footer__logo__container {
+    width: 30%;
+
 }
 .footer__logo_block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.footer__logo_block img {
+    display: block;
+}
+.footer__logo_block p {
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #fff;
+    letter-spacing: 13%;
+    margin-left: 25px ;
 }
 .footer__navigation {
+    width: 30%;
 }
 .footer__navigation_name__container {
+    color: #f4f4f4;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 180%;
+    font-family: 'Montserrat';
+    font-style: normal;
 }
 .footer__navigation_name_border {
+    width: 34px;
+    height: 4px;
+    margin-top: 6px;
+    background-color: #F55B14;
 }
 .footer__navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 15px;
 }
 .footer__navigation__list_element {
+    color: #fff;
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.footer__navigation__list_element:hover{
+    color: #F55B14;
 }
 .footer__best_sellers {
+
 }
 .footer__bestsellers__wrapper {
 }
 .footer__legacy_wrap {
+    width: 100%;
+    background-color: #041332;
 }
 .footer__element {
 }
