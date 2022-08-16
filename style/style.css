@@ -18,7 +18,9 @@
 :active {
     outline: none;
 }
-
+a {
+    text-decoration: none;
+}
 a:focus,
 a:active {
     outline: none;
@@ -83,7 +85,7 @@ body {
 }
 
 .phone__block {
-    width: 33%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -149,7 +151,7 @@ body {
 }
 
 .promo__block {
-    background-image: url('/img/1.png');
+    background-image: url('../img/1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,6 +167,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /*******PROMO***************/
@@ -334,7 +337,7 @@ body {
 
     height: 50vh;
     width: 40%;
-    background-image: url('/img/12.png');
+    background-image: url('../img/12.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -771,6 +774,7 @@ textarea:-ms-input-placeholder {
     
 }
 .footer__bestsellers__wrapper img {
+    cursor: pointer;
     margin-left: 15px;
 }
 .footer__bestsellers__wrapper img:first-child{
@@ -838,8 +842,7 @@ margin-bottom: 28px;
 
   .container:hover post-title{
     color: #000;
-    z-index: 20;
-
+    z-index: 10;
   }
   
   .post-title {
@@ -849,4 +852,40 @@ margin-bottom: 28px;
     line-height: 1.333;
     transition: 0.4s ease-out;
     z-index: 15;
+  }
+  @media only screen and (max-width: 1450px) {
+    .address_phone_block-wrapper{
+        width: 84%;
+    }
+    .phone__block{
+        width: 50%;
+    }
+    .address_block{
+        max-width: 40%;
+    }
+    .catalog__name_desc{
+        max-width: 84%;
+    }
+    .catalog__items__wrapper{
+        max-width: 84%;
+    }
+    .about_us__wrapper_wrap{
+        max-width: 84%;
+    }
+
+    .work_with_elements_wrapper{
+        max-width: 84%;
+    }
+    .work__element_desc::before{
+        display: none;
+    }
+    .make_order__wrapper-wrap{
+        max-width: 85%;
+    }
+    .contact__with_us_wrap_wrapper{
+        max-width: 85%;
+    }
+    .footer__content {
+        max-width: 84%;
+    }
   }
