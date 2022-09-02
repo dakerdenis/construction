@@ -911,4 +911,11 @@ textarea:-ms-input-placeholder {
 .about__us__text-button{
     text-align: center;
 }
+.make_order__name {
+    width: 62%;
+}
+.make_order__images{
+    flex-direction: column;
+    margin-top: 0px;
+}
 }
