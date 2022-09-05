@@ -917,5 +917,42 @@ textarea:-ms-input-placeholder {
 .make_order__images{
     flex-direction: column;
     margin-top: 0px;
+    align-items: center;
+}
+.make_order__image{
+    margin-top: 20px;
+}
+.contact__with_us_data{
+    flex-direction: column;
+    align-items: center;
+}
+.contact__with_us_data-numbers{
+    width: 70%;
+}
+.contact__with_us_data-adress{
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.contact__with_us_data-social{
+    width: 70%;
+}
+.contact__with_us_data{
+    margin-top: 1rem;
+}
+.contact__form-info{
+    flex-direction: column;
+    margin-bottom: 0px;
+
+}
+.contact__form-info_input{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.contact__form_name{
+    margin-bottom: 20px;
+}
+.submit__button__wrapper{
+    margin-top: 20px;
 }
 }
