@@ -91,4 +91,87 @@
     width: 100%;
     overflow: auto;
     background-color: #fff;
+    padding: 15px;
+}
+
+
+.catalog__element {
+    width: 95%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.catalog__element_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catalog__element_image {
+    width: 20%;
+    height: 200px;
+    background-color: #f55b14;
+}
+.catalog__element_desc {
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.catalog__element_desctext{
+    line-height: 25px;
+}
+.catalog__element__desc_container{
+    height: auto;
+}
+.catalog__elementdesc_nameprice {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.catalog_element_name {
+    font-size: 19px;
+    font-weight: 600;
+}
+.catalog_element_price {
+    font-size: 19px;
+    font-weight: 600;
+}
+.catalog__element_typedesc {
+    margin-top: 10px;
+}
+.catalog__element_type {
+    margin-bottom: 10px;
+}
+
+
+.catalog__element__deleteedit {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.catalog__element__deleteedit a {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid #f55b14;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+.catalog__element__deleteedit a:hover{
+    background-color: #f55b14;
+    color: #fff;   
+}
+.catalog__element__edit {
+    margin-right: 35px;
+
+}
+.catalog__element__delete {
 }
