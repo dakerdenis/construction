@@ -7,12 +7,16 @@
     <title>Admin panel</title>
     <link rel="stylesheet" href="../style/style.css">
     <!--ADMIN PANEL styles-->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="admin__panel__wrapper">
         <div class="admin__panel__block">
             <div class="admin__panel__logo">
 
+            </div>
+            <div class="admin__panel__name">
+                Site firm-name
             </div>
             <form action="./vendor/login.php" class="admin__panel__form">
                 <div class="admin_input__block">

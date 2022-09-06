@@ -1,0 +1,85 @@
+body{
+    background-color: #fff;
+}
+
+.admin__panel__wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin__panel__block {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 20px;
+    min-width: 20% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.admin__panel__logo {
+    background-color: #f55b14;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.admin__panel__name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px
+}
+.admin__panel__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.admin_input__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.admin_input_desc {
+    width: 30%;
+
+}
+.admin_input_input {
+    padding: 5px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+.admin_input_input input{
+    width: 100%;
+    font-size: 15px;
+}
+.admin_input_block {
+
+}
+.admin_input_submit {
+    margin-top: 10px;
+    text-align: center;
+}
+.admin_input_submit input{
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid #f55b14;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+
+}
+.admin_input_submit input:hover{
+    background-color: #f55b14;
+    color: #fff;
+}
