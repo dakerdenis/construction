@@ -1,1 +1,4 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit cupiditate dolores enim, nihil mollitia ad tempora id. In, quidem tempore distinctio illum reiciendis labore aut eligendi error optio quam!
+<div class="catalog__block__wrapper">
+    <!-элемент каталога---->
+    <div class="catalog__element"></div>
+</div>
