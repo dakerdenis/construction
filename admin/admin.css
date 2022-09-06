@@ -1,0 +1,94 @@
+.admin__panel__wrapper {
+    width: 100%;
+    height: 100vh;
+}
+.admin_panel_header {
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 2px solid #f55b14;
+    border-top: 2px solid #fff;
+}
+.admin_panel_headerwrapper{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.admin__panel__logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.admin_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f55b14;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #f55b14;
+}
+.admin__pagename {
+    margin-left: 15px;
+    font-weight: 600;
+}
+.admin__panel_loginpanel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.admin__panel_username {
+    margin-right: 25px;
+    font-weight: 600;
+}
+.admin__panel_login a {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid #f55b14;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+.admin__panel_login a:hover{
+    background-color: #f55b14;
+    color: #fff;    
+}
+
+.admin_content_navigation {
+    width: 100%;
+    background-color: antiquewhite;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: space-between;
+}
+.adminpanel__leftblock {
+    background-color: #e3e3e3;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.left__block_wrapper {
+    
+}
+.leftblock__element {
+    margin-top: 10px;
+}
+.left_block__bottomcontainer {
+}
+.admin_content__container {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #fff;
+}
