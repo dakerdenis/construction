@@ -932,15 +932,15 @@ textarea:-ms-input-placeholder {
     align-items: center;
 }
 .contact__with_us_data-numbers{
-    width: 70%;
+    width: 100%;
 }
 .contact__with_us_data-adress{
     margin-top: 10px;
-    width: 70%;
+    width: 100%;
     margin-bottom: 10px;
 }
 .contact__with_us_data-social{
-    width: 70%;
+    width: 100%;
 }
 .contact__with_us_data{
     margin-top: 1rem;
