@@ -129,6 +129,17 @@
 .catalog__element_desctext{
     line-height: 25px;
 }
+.catalog__element_desctext p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+}
 .catalog__element__desc_container{
     height: auto;
 }
