@@ -98,6 +98,7 @@
 }
 
 .catalog__element {
+    margin-top: 15px;
     width: 95%;
     padding: 15px;
     border-radius: 5px;
@@ -194,13 +195,71 @@
     background-color: #f55b14;
     color: #fff; 
 }
+/*******************************************/
+.add__element__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add__element__form {
+    width: 80%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 25px;
+}
+.admin_input__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.admin_input_desc {
+    width: 30%;
+}
+.admin_input_input {
+    padding: 9px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+.admin_input_input input{
+    width: 100%;
+    font-size: 15px;
+}
+.admin_input_block {
+    
+}
+.admin_input_submit {
+    margin-top: 10px;
+    text-align: center;
+}
 
+.admin_input_submit input{
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid #f55b14;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
 
-
-
-
-
-
+}
+.admin_input_submit input:hover{
+    background-color: #f55b14;
+    color: #fff;
+}
+.add__element__form textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
 
 #load {
     display: flex;
@@ -231,3 +290,11 @@
     padding: 0;
     word-break: break-all;
   }
+/******************************************/
+
+
+
+
+
+
+

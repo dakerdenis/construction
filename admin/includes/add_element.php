@@ -1,9 +1,9 @@
 <div class="add__element__wrapper">
-    <form action="./add.php" method="POST" class="add__element__form">
+    <form action="./includes/add.php" method="POST" class="add__element__form">
         <div class="admin_input__block">
             <div class="admin_input_desc">Имя продукта:</div>
             <div class="admin_input_input">
-                <input type="text" name="name" id="email">
+                <input type="text" name="name" id="name">
             </div>
         </div>
         <div class="admin_input__block">
@@ -30,13 +30,13 @@
         <div class="admin_input__block">
             <div class="admin_input_desc">Описание:</div>
             <div class="admin_input_input">
-                <input type="text" name="description" id="description">
+                    <textarea id="description" name="description" id="" cols="30" rows="10"></textarea>
             </div>
         </div>
 
         <div class="admin_input_block">
             <div class="admin_input_submit">
-                <input type="submit" value="Войти">
+                <input type="submit" name="create_element" value="Загрузить">
             </div>
         </div>
     </form>
