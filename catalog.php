@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>"ООО - Камушек"</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/catalog.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -110,16 +111,59 @@
 
             <!--catalog items-->
             <div class="catalog__elements__wrapper">
+                <?php
+                include './admin/vendor/db.php';
+                $query = "SELECT * FROM catalog";
+                $select__catalog = mysqli_query($connection, $query);
+
+                while ($row = mysqli_fetch_assoc($select__catalog)) {
+                    $id     = $row['id'];
+                    $name   = $row['name'];
+                    $image  = $row['image'];
+                    $desc   = $row['description'];
+                    $type   = $row['type'];
+                    $price  = $row['price'];
+                ?>
+
                     <!---Элемент-->
                     <div class="main__catalog__element">
                         <div class="main__catalog_element_wrapper">
                             <!---фото--->
                             <div class="main__catalog_element_img">
-                                <img src="" alt="">
+                                <img width="100" src="./admin/includes/imgs/<?php echo $image; ?>" alt="">
                             </div>
                             <!--Описание и цена-->
+
+                            <div class="main__catalog_element_desc">
+                                <div class="main__catalog_element_desc_wrapper">
+                                    <!--название -->
+                                    <div class="main__catalog_element_desc-name">
+                                        <?php echo $name; ?>
+                                    </div>
+
+                                    <!--Описание-->
+                                    <div class="main__catalog_element_desc-desc">
+                                        <p><?php echo $desc; ?></p>
+                                    </div>
+
+                                    <!--Кнопка подробнеее и кнопка купить--->
+                                    <div class="main__catalog_element_desc-buy_price">
+                                        <div class="element__desc-buy">
+                                            <a href="./item.php?source=<?php echo $id; ?>"></a>
+                                        </div>
+                                        <div class="element__desc-price">
+                                            <?php echo $price; ?> 110 AZN
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                <?php
+                }
+                ?>
+
+
             </div>
         </div>
         <!--*Footer blcock for page-->

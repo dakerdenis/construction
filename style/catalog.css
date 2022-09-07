@@ -1,0 +1,38 @@
+.catalog__elements__wrapper {
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.main__catalog__element {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.main__catalog_element_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main__catalog_element_img {
+}
+.main__catalog_element_desc {
+}
+.main__catalog_element_desc_wrapper {
+}
+.main__catalog_element_desc-name {
+}
+.main__catalog_element_desc-desc {
+}
+.main__catalog_element_desc-buy_price {
+}
+.element__desc-buy {
+}
+.element__desc-price {
+}
