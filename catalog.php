@@ -124,7 +124,6 @@
                     $type   = $row['type'];
                     $price  = $row['price'];
                 ?>
-
                     <!---Элемент-->
                     <div class="main__catalog__element">
                         <div class="main__catalog_element_wrapper">
@@ -148,11 +147,11 @@
 
                                     <!--Кнопка подробнеее и кнопка купить--->
                                     <div class="main__catalog_element_desc-buy_price">
-                                        <div class="element__desc-buy">
-                                            <a href="./item.php?source=<?php echo $id; ?>"></a>
-                                        </div>
+                                        <a href="./item.php?source=<?php echo $id; ?>" class="element__desc-buy">
+                                        Купить
+                </a>
                                         <div class="element__desc-price">
-                                            <?php echo $price; ?> 110 AZN
+                                            <?php echo $price; ?> AZN
                                         </div>
                                     </div>
                                 </div>

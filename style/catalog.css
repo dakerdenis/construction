@@ -1,7 +1,9 @@
 .catalog__elements__wrapper {
+
     width: 73%;
     height: 100%;
     margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -12,6 +14,7 @@
     width: 30%;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    margin-bottom: 3em;
 }
 .main__catalog_element_wrapper {
     width: 100%;
@@ -21,18 +24,74 @@
     justify-content: space-between;
 }
 .main__catalog_element_img {
+    height: 15em;
+    background-color: #000;
+    overflow: hidden;
+}
+.main__catalog_element_img img {
+    width: 100%;
+    object-fit: fill;
 }
 .main__catalog_element_desc {
+    width: 100%;
+    padding: 8px;
+
 }
 .main__catalog_element_desc_wrapper {
+    width: 100%;
+    height: 100%;
 }
 .main__catalog_element_desc-name {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 .main__catalog_element_desc-desc {
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 50px;
+}
+.main__catalog_element_desc-desc p {
+    font-size: 16px;
+    line-height: 25px;
+
+
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        box-orient: vertical;
 }
 .main__catalog_element_desc-buy_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    border-top: 1px solid rgba(227, 227, 227, 0.3);
 }
-.element__desc-buy {
+.element__desc-buy  {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid #f55b14;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.element__desc-buy:hover{
+    background-color: #f55b14;
+    color: #fff;
 }
 .element__desc-price {
+    font-size: 20px;
+    font-weight: 600;
 }
