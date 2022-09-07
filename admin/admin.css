@@ -115,6 +115,10 @@
     height: 200px;
     background-color: #f55b14;
 }
+.catalog__element_image img {
+    width: 100%;
+    object-fit: cover;
+}
 .catalog__element_desc {
     width: 79%;
     display: flex;

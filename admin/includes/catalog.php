@@ -25,404 +25,45 @@
             $price  = $row['price'];
         ?>
 
+
+            <!--элемент каталога---->
+            <div class="catalog__element">
+                <div class="catalog__element_wrapper">
+                    <div class="catalog__element_image">
+                        <img src="./includes/imgs/<?php echo $image ?>" alt="">
+                    </div>
+
+                    <div class="catalog__element_desc">
+
+                        <div class="catalog__element__desc_container">
+                            <!---название и цена--->
+                            <div class="catalog__elementdesc_nameprice">
+                                <div class="catalog_element_name"><?php echo $name ?></div>
+                                <div class="catalog_element_price"><?php echo $price ?> AZN</div>
+                            </div>
+                            <!---тип и описание товара---->
+                            <div class="catalog__element_typedesc">
+                                <div class="catalog__element_type">Тип товара: <?php echo $type ?></div>
+                                <div class="catalog__element_desctext">
+                                    <p><?php echo $desc ?></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="catalog__element__deleteedit">
+                            <div class="catalog__element__edit">
+                                <a href="./includes/edit.php?source=<?php echo $id?>">EDIT</a>
+                            </div>
+                            <div class="catalog__element__delete">
+                                <a href="./includes/delete.php?source=<?php echo $id?>">DELETE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <?php
         }
         ?>
-        <!--элемент каталога---->
-        <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <!--элемент каталога---->
-                <div class="catalog__element">
-            <div class="catalog__element_wrapper">
-                <div class="catalog__element_image">
-                    <img src="./includes/imgs" alt="">
-                </div>
-
-                <div class="catalog__element_desc">
-
-                    <div class="catalog__element__desc_container">
-                        <!---название и цена--->
-                        <div class="catalog__elementdesc_nameprice">
-                            <div class="catalog_element_name">Название товара</div>
-                            <div class="catalog_element_price">100 AZN</div>
-                        </div>
-                        <!---тип и описание товара---->
-                        <div class="catalog__element_typedesc">
-                            <div class="catalog__element_type">Тип товара: Кирпичи</div>
-                            <div class="catalog__element_desctext">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, alias. Vero, officiis dignissimos, quas ab eveniet tenetur ad dolorem reiciendis iste qui nobis, facilis delectus earum explicabo neque minima nam.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="catalog__element__deleteedit">
-                        <div class="catalog__element__edit">
-                            <a href="#">EDIT</a>
-                        </div>
-                        <div class="catalog__element__delete">
-                            <a href="#">DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>

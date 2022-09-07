@@ -1,5 +1,5 @@
 <div class="add__element__wrapper">
-    <form action="./includes/add.php" method="POST" class="add__element__form">
+    <form action="./includes/add.php" method="POST" class="add__element__form" enctype="multipart/form-data">
         <div class="admin_input__block">
             <div class="admin_input_desc">Имя продукта:</div>
             <div class="admin_input_input">
