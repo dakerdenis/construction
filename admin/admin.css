@@ -114,6 +114,7 @@
     width: 20%;
     height: 200px;
     background-color: #f55b14;
+    overflow: hidden;
 }
 .catalog__element_image img {
     width: 100%;
