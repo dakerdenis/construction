@@ -19,7 +19,7 @@
         echo $query;
         $addnew__element = mysqli_query($connection, $query);
 
-        header('../admin.php');
+        header('Location: ../admin.php?source=catalog');
     }
 
 ?>
