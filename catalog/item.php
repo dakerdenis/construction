@@ -19,14 +19,16 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
     <div class="catalog__item_container">
         <!---навигация--->
         <div class="catalog__item_desc">
-            <a href="../catalog.php">Каталог</a> > Товар № <?php echo $id; ?>
+            <a href="./catalog.php">Каталог</a> <span>&#8250;</span> <p>Товар № <?php echo $id; ?></p>
         </div>
 
         <!---Блок элемента--->
-        <div class="catalog_item_wrapper">
+        <div class="catalog_item_wrap">
             <!--блок картинки элемента-->
             <div class="item__imageblock">
-                <img src="./admin/includes/imgs/<?php echo $image;?>" alt="">
+                <div class="item__imageblock_image">
+                <img src="../admin/includes/imgs/<?php echo $image;?>" alt="">
+                </div>
             </div>
 
             <!---блок информации о элементе-->
@@ -43,12 +45,17 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     Стоимость: <?php echo $price ?>
                 </div>
             </div>
+
+            <!----->
+            <div class="item__order_details">
+                
+            </div>
         </div>
+
+
         <!--Дополнительная информация об элементе--->
         <div class="item__additional_info">
-            <p>
-                <?php echo $desc; ?>
-            </p>
+            <p><?php echo $desc; ?></p>
         </div>
     </div>
 </div>
