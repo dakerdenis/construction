@@ -42,9 +42,19 @@
     height: 100%;
 }
 .main__catalog_element_desc-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-size: 19px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+._desc-name-num{
+    font-size: 14px;
+    font-weight: 500;
+    color: #c9c7c7;
+
 }
 .main__catalog_element_desc-desc {
     overflow: hidden;

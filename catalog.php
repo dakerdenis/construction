@@ -85,86 +85,26 @@
                 </div>
             </div>
         </div>
-        <!--Контейнер каталога-->
-        <!--* Block Catalog with name & information & photo-->
-        <div class="catalog__wrapper">
-            <!--catalog desc & name -->
-            <div class="catalog__name_desc">
-                <div class="catalog__name_desc_wrapper">
-                    <!--Catalog name-->
-                    <div class="catalog_name">
-                        <p class="catalog_name-p">КАТАЛОГ</p>
-                    </div>
+        <?php
+        if (isset($_GET['catalog'])) {
+            $catalog = $_GET['catalog'];
+        } else {
+            $catalog = '';
+        }
+        switch ($catalog) {
+            case 'item';
+                include './catalog/item.php';
+                break;
 
-                    <!--Catalog desc-->
-                    <div class="catalog__desc">
-                        <p class="catalog__desc-p">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-                            ipsa excepturi veritatis quam cum ad et culpa at maiores,
-                            doloremque, sequi ipsum sapiente facere, voluptatem repellat
-                            tempore ut? Consectetur, atque. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Eos ipsa excepturi veritatis q
-                        </p>
-                    </div>
-                </div>
-            </div>
+            case 'cat';
+                include './catalog/catalog_page.php';
+                break;
 
-            <!--catalog items-->
-            <div class="catalog__elements__wrapper">
-                <?php
-                include './admin/vendor/db.php';
-                $query = "SELECT * FROM catalog";
-                $select__catalog = mysqli_query($connection, $query);
-
-                while ($row = mysqli_fetch_assoc($select__catalog)) {
-                    $id     = $row['id'];
-                    $name   = $row['name'];
-                    $image  = $row['image'];
-                    $desc   = $row['description'];
-                    $type   = $row['type'];
-                    $price  = $row['price'];
-                ?>
-                    <!---Элемент-->
-                    <div class="main__catalog__element">
-                        <div class="main__catalog_element_wrapper">
-                            <!---фото--->
-                            <div class="main__catalog_element_img">
-                                <img width="100" src="./admin/includes/imgs/<?php echo $image; ?>" alt="">
-                            </div>
-                            <!--Описание и цена-->
-
-                            <div class="main__catalog_element_desc">
-                                <div class="main__catalog_element_desc_wrapper">
-                                    <!--название -->
-                                    <div class="main__catalog_element_desc-name">
-                                        <?php echo $name; ?>
-                                    </div>
-
-                                    <!--Описание-->
-                                    <div class="main__catalog_element_desc-desc">
-                                        <p><?php echo $desc; ?></p>
-                                    </div>
-
-                                    <!--Кнопка подробнеее и кнопка купить--->
-                                    <div class="main__catalog_element_desc-buy_price">
-                                        <a href="./item.php?source=<?php echo $id; ?>" class="element__desc-buy">
-                                        Купить
-                </a>
-                                        <div class="element__desc-price">
-                                            <?php echo $price; ?> AZN
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php
-                }
-                ?>
-
-
-            </div>
-        </div>
+            default:
+                include './catalog/catalog_page.php';
+                break;
+        }
+        ?>
         <!--*Footer blcock for page-->
         <div class="footer__wrapper">
             <!--footer content-->

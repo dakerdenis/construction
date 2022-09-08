@@ -12,7 +12,9 @@
                 <input type="file" name="file" id="file" multiple>
             </div>
         </div>
-        <div id="load"></div>
+        <div class="preloaded_image__wrapper">
+            <div id="load"></div>
+        </div>
 
         <div class="admin_input__block">
             <div class="admin_input_desc">Тип:</div>
@@ -30,7 +32,7 @@
         <div class="admin_input__block">
             <div class="admin_input_desc">Описание:</div>
             <div class="admin_input_input">
-                    <textarea id="description" name="description" id="" cols="30" rows="10"></textarea>
+                <textarea id="description" name="description" id="" cols="30" rows="10"></textarea>
             </div>
         </div>
 
@@ -46,21 +48,21 @@
 <script>
     let load = document.querySelector('#load');
 
-document.querySelector('#file').addEventListener('change', function(e) {
-  let tgt = e.target || window.event.srcElement,
-        files = tgt.files;
+    document.querySelector('#file').addEventListener('change', function(e) {
+        let tgt = e.target || window.event.srcElement,
+            files = tgt.files;
 
-  load.innerHTML = '';
+        load.innerHTML = '';
 
-  if(files && files.length) {
-    for(let i = 0; i < files.length; i++) {
-        let $self = files[i],
-                fr = new FileReader();
-        fr.onload = function(e) {
-        load.insertAdjacentHTML('beforeEnd', `<div class="load-img"><img src="${e.srcElement.result}"/><p>${$self.name}</p></div>`);
+        if (files && files.length) {
+            for (let i = 0; i < files.length; i++) {
+                let $self = files[i],
+                    fr = new FileReader();
+                fr.onload = function(e) {
+                    load.insertAdjacentHTML('beforeEnd', `<div class="load-img"><img src="${e.srcElement.result}"/><p>${$self.name}</p></div>`);
+                }
+                fr.readAsDataURL(files[i]);
+            };
         }
-        fr.readAsDataURL(files[i]);
-    };
-  }
-});
+    });
 </script>
