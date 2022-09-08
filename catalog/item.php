@@ -41,6 +41,7 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                 <div class="item__type">
                     Категория товара: <?php echo $type; ?>
                 </div>
+                
 
                 <div class="item__price">
                     Стоимость: <?php echo $price ?>
