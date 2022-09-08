@@ -41,22 +41,26 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                 <div class="item__type">
                     Категория товара: <?php echo $type; ?>
                 </div>
-                
+
 
                 <div class="item__price">
-                    Стоимость: <?php echo $price ?>
+                    Стоимость: <span><?php echo $price ?></span> AZN
                 </div>
             </div>
 
             <!----->
             <div class="item__order_details">
-
+                    <div class="item__order_desc">Доставка</div>
+                    <div class="item__order_desc-text">
+                        Свяжитесь с нами для осуществления заказа и доставки
+                    </div>
             </div>
         </div>
 
 
         <!--Дополнительная информация об элементе--->
         <div class="item__additional_info">
+            < >Дополнительное описание товара:</span>
             <p><?php echo $desc; ?></p>
         </div>
     </div>
