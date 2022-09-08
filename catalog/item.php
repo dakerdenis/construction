@@ -60,7 +60,7 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
 
         <!--Дополнительная информация об элементе--->
         <div class="item__additional_info">
-            < >Дополнительное описание товара:</span>
+            <span>Дополнительное описание товара:</span>
             <p><?php echo $desc; ?></p>
         </div>
     </div>
