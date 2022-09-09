@@ -23,6 +23,9 @@
             </div>
             <!---сортировка--->
             <div class="catalog__sortby">
+                <div class="sortby_desc">
+                    Сортировка: 
+                </div>
                 <div class="sortby__price_low">
                     <a href="./catalog.php?sort_by=low_to_high">От дешевого к дорогому </a>
                 </div>
@@ -71,10 +74,13 @@
             case 'default';
             $query = "SELECT * FROM `catalog` ";
             break;
+
+            default:
+            $query = "SELECT * FROM `catalog` ";
+            break;
          }
 
 
-         $query = "SELECT * FROM catalog";
                 $select__catalog = mysqli_query($connection, $query);
 
                 while ($row = mysqli_fetch_assoc($select__catalog)) {
