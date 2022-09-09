@@ -23,11 +23,11 @@
             </div>
             <!---сортировка--->
             <div class="catalog__sortby">
-                <div class="sortby__price">
-                    <a href="#">От дешевого к дорогому </a>
+                <div class="sortby__price_low">
+                    <a href="./catalog.php?sort_by=low_to_high">От дешевого к дорогому </a>
                 </div>
                 <div class="sortby__price">
-                    <a href="#">От дорогого к дешевому</a>
+                    <a href="./catalog.php?sort_by=high_to_low">От дорогого к дешевому</a>
                 </div>
                 <div class="sortby__default">
                     <a href="#">По умолчанию</a>
@@ -38,8 +38,32 @@
             <!--catalog items-->
             <div class="catalog__elements__wrapper">
                 <?php
-                include './admin/vendor/db.php';
-                $query = "SELECT * FROM catalog";
+               include './admin/vendor/db.php';
+               $sort_by ='';
+
+      //         switch ($catalog) {
+      //             case 'item';
+      //                 include $query = "SELECT * FROM catalog";
+      //                 break;
+
+      //             case 'cat';
+      //                 include './catalog/catalog_page.php';
+      //                 break;
+
+      //             default:
+      //                 include './catalog/catalog_page.php';
+      //                 break;
+         //       }
+         switch ($sort_by){
+            case 'low_to_high';
+            $query = "SELECT * FROM `catalog` ORDER BY `catalog`.`price` ASC ";
+            break;
+
+            case ''
+         }
+
+
+         $query = "SELECT * FROM catalog DESC";
                 $select__catalog = mysqli_query($connection, $query);
 
                 while ($row = mysqli_fetch_assoc($select__catalog)) {
@@ -67,7 +91,7 @@
                                             <?php echo $name; ?>
                                         </div>
                                         <div class="_desc-name-num">
-                                            код товара: <?php echo $id;?>
+                                            код товара: <?php echo $id; ?>
                                         </div>
                                     </div>
 

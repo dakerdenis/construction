@@ -206,3 +206,24 @@ padding: 0px 12px 12px 12px;
 .item__additional_info span {
 
 }
+.catalog__sortby {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 35px;
+}
+.catalog__sortby a {
+  color: #020e28;
+}
+.catalog__sortby a:hover {
+  color: #f55b14;
+}
+.sortby__price {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.sortby__price_low{
+
+}
+.sortby__default {
+}
