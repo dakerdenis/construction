@@ -30,7 +30,7 @@
                     <a href="./catalog.php?sort_by=high_to_low">От дорогого к дешевому</a>
                 </div>
                 <div class="sortby__default">
-                    <a href="#">По умолчанию</a>
+                    <a href="./catalog.php?sort_by=default">По умолчанию</a>
                 </div>
             </div>
 
@@ -54,16 +54,27 @@
       //                 include './catalog/catalog_page.php';
       //                 break;
          //       }
+         if(isset($_GET['sort_by'])){
+            $sort_by = $_GET['sort_by'];
+         }
+
+
          switch ($sort_by){
             case 'low_to_high';
             $query = "SELECT * FROM `catalog` ORDER BY `catalog`.`price` ASC ";
             break;
 
-            case ''
+            case 'high_to_low';
+            $query = "SELECT * FROM `catalog` ORDER BY `catalog`.`price` DESC";
+            break;
+
+            case 'default';
+            $query = "SELECT * FROM `catalog` ";
+            break;
          }
 
 
-         $query = "SELECT * FROM catalog DESC";
+         $query = "SELECT * FROM catalog";
                 $select__catalog = mysqli_query($connection, $query);
 
                 while ($row = mysqli_fetch_assoc($select__catalog)) {
