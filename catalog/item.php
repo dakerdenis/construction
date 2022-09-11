@@ -84,7 +84,7 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     </div>
                 </div>
                 <div class="item__makeorder">
-                    <a href="#">Заказать</a>
+                    <a href="./catalog.php?catalog=order">Заказать</a>
                 </div>
             </div>
         </div>

@@ -99,6 +99,9 @@
             case 'cat';
                 include './catalog/catalog_page.php';
                 break;
+            case 'order';
+                include './order/order.php';
+                break;
 
             default:
                 include './catalog/catalog_page.php';

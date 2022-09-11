@@ -119,7 +119,7 @@
 
                                     <!--Кнопка подробнеее и кнопка купить--->
                                     <div class="main__catalog_element_desc-buy_price">
-                                        <a href="./catalog.php?catalog=item&item=<?php echo $id; ?>" class="element__desc-buy">
+                                        <a href="./catalog.php?catalog=item&item=<?php echo $id;?>" class="element__desc-buy">
                                             Купить
                                         </a>
                                         <div class="element__desc-price">
