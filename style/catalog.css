@@ -169,8 +169,11 @@ padding: 0px 12px 12px 12px;
     font-size: 20px;
 
 }
-.item__type {
+.item_number{
   margin-top: 20px;
+}
+.item__type {
+  margin-top: 10px;
 }
 .item__price {
   margin-top: 10px;

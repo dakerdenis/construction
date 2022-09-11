@@ -38,6 +38,10 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     <?php echo $name; ?>
                 </div>
 
+                <div class="item_number">
+                    Код товара: <?php echo $id; ?>
+                </div>
+
                 <div class="item__type">
                     Категория товара: <?php echo $type; ?>
                 </div>
