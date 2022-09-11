@@ -1,6 +1,7 @@
 <?php
 
 include './admin/vendor/db.php';
+
 $item_id = $_GET['item'];
 
 $query = "SELECT * FROM catalog WHERE id = '$item_id' ";
@@ -53,12 +54,12 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
             </div>
 
             <!----->
-            <div class="item__order_details">
+            <form class="item__order_details" method="POST" action="./catalog.php?catalog=order&id=<?php echo $id;?>">
                 <div class="item__order__desc_wrapper">
                     <div class="item__order_desc"><?php echo $price ?> AZN</div>
                     <div class="item__order_amount"> Количество:
                         <label class="select" for="slct">
-                            <select id="slct" required="required">
+                            <select id="slct" >
                                 <option value="" disabled="disabled" selected="selected">1</option>
                                 <option value="#">1</option>
                                 <option value="#">2</option>
@@ -84,9 +85,9 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     </div>
                 </div>
                 <div class="item__makeorder">
-                    <a href="./catalog.php?catalog=order">Заказать</a>
+                    <input type="submit" value="Заказать">
                 </div>
-            </div>
+            </form>
         </div>
 
 

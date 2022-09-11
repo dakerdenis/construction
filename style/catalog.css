@@ -290,12 +290,12 @@ padding: 0px 12px 12px 12px;
   display: flex;
   justify-content: center;
 }
-.item__makeorder a {
+.item__makeorder input {
   display: block;
   color: #020e28;
   background-color: #fff;
   border: 1px solid #f55b14;
-  padding: 6px 30px ;
+  padding: 6px 30px;
   font-weight: 500;
   font-size: 23px;
   text-transform: uppercase;
