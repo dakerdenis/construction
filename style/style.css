@@ -832,7 +832,13 @@ textarea:-ms-input-placeholder {
   display: none;
   visibility: hidden
 }
-
+.left__block_wrapper {
+}
+.leftblock__element a{
+  display: block;
+  background-color: #fff;
+  color: rgba(4, 19, 50, 1);
+}
 @media only screen and (max-width: 1450px) {
   .address_phone_block-wrapper {
     width: 84%;

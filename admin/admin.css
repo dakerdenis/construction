@@ -85,6 +85,7 @@
     margin-top: 10px;
 }
 .left_block__bottomcontainer {
+    font-size: 14px;
 }
 .admin_content__container {
     height: 100%;
@@ -211,6 +212,31 @@
     background-color: #f55b14;
     color: #fff; 
 }
+
+
+.left__block_wrapper {
+}
+.leftblock__element span {
+
+    transform: scale(1.2);
+}
+.leftblock__element a{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #fff;
+  color: rgba(4, 19, 50, 1);
+  border: 1.5px solid #f55b14;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 500;
+
+}
+.leftblock__element a:hover{
+    background-color: #f55b14;
+    color: #fff;
+}
+
 /*******************************************/
 .add__element__wrapper {
     width: 100%;

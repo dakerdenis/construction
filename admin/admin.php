@@ -40,14 +40,14 @@
             <div class="adminpanel__leftblock">
                 <div class="left__block_wrapper">
                     <div class="leftblock__element">
-                        <a href="./admin.php?source=catalog">Каталог</a>
+                        <a href="./admin.php?source=catalog">Каталог <span>&#8250;</span> </a>
                     </div>
                     <div class="leftblock__element">
-                        <a href="./admin.php?source=main">Главная страница</a>
+                        <a href="./admin.php?source=main">Главная страница <span>&#8250;</span> </a>
                     </div>
                 </div>
                 <div class="left_block__bottomcontainer">
-                    Lorem
+                    Created by <span> <a href="https://daker.website">Daker</a> &#169;</span>
                 </div>
             </div>
 
