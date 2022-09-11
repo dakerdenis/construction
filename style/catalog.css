@@ -157,8 +157,8 @@
     overflow: hidden;
 }
 .item__imageblock_image img {
-    object-fit: contain;
-    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 .item__description {
   width: 25.5%;
@@ -190,8 +190,8 @@ padding: 0px 12px 12px 12px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .item__order_desc {
-  font-size: 20px;
-  text-align: center;
+  font-size: 24px;
+
   font-weight: 500;
 
 }
@@ -199,7 +199,7 @@ padding: 0px 12px 12px 12px;
   margin-top: 20px;
   line-height: 25px;
   font-size: 16px;
-  text-align: center;
+
 }
 
 .item__additional_info{

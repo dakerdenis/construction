@@ -54,9 +54,10 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
 
             <!----->
             <div class="item__order_details">
-                    <div class="item__order_desc">Доставка</div>
+                    <div class="item__order_desc"><?php echo $price ?> AZN</div>
+                                        
                     <div class="item__order_desc-text">
-                        Свяжитесь с нами для осуществления заказа и доставки
+                        Свяжитесь с нами и выберите один из 4х методов доставки
                     </div>
             </div>
         </div>
