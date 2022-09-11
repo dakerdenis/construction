@@ -54,32 +54,37 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
 
             <!----->
             <div class="item__order_details">
-                <div class="item__order_desc"><?php echo $price ?> AZN</div>
-                <div class="item__order_amount">
-                    <label class="select" for="slct">
-                        <select id="slct" required="required">
-                            <option value="" disabled="disabled" selected="selected">1</option>
-                            <option value="#">1</option>
-                            <option value="#">2</option>
-                            <option value="#">3</option>
-                            <option value="#">4</option>
-                            <option value="#">5</option>
-                            <option value="#">6</option>
-                            <option value="#">7</option>
-                        </select>
-                        <svg>
-                            <use xlink:href="#select-arrow-down"></use>
+                <div class="item__order__desc_wrapper">
+                    <div class="item__order_desc"><?php echo $price ?> AZN</div>
+                    <div class="item__order_amount"> Количество:
+                        <label class="select" for="slct">
+                            <select id="slct" required="required">
+                                <option value="" disabled="disabled" selected="selected">1</option>
+                                <option value="#">1</option>
+                                <option value="#">2</option>
+                                <option value="#">3</option>
+                                <option value="#">4</option>
+                                <option value="#">5</option>
+                                <option value="#">6</option>
+                                <option value="#">7</option>
+                            </select>
+                            <svg>
+                                <use xlink:href="#select-arrow-down"></use>
+                            </svg>
+                        </label>
+                        <!-- SVG Sprites-->
+                        <svg class="sprites">
+                            <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                <polyline points="1 1 5 5 9 1"></polyline>
+                            </symbol>
                         </svg>
-                    </label>
-                    <!-- SVG Sprites-->
-                    <svg class="sprites">
-                        <symbol id="select-arrow-down" viewbox="0 0 10 6">
-                            <polyline points="1 1 5 5 9 1"></polyline>
-                        </symbol>
-                    </svg>
+                    </div>
+                    <div class="item__order_desc-text">
+                        Свяжитесь с нами и выберите один из 4х методов доставки
+                    </div>
                 </div>
-                <div class="item__order_desc-text">
-                    Свяжитесь с нами и выберите один из 4х методов доставки
+                <div class="item__makeorder">
+                    <a href="#">Заказать</a>
                 </div>
             </div>
         </div>
