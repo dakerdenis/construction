@@ -213,6 +213,7 @@ padding: 0px 12px 12px 12px;
   margin-top: 25px;
   font-size: 17px;
   line-height: 27px;
+  font-weight: 400;
 }
 .item__additional_info span {
 
@@ -310,6 +311,8 @@ padding: 0px 12px 12px 12px;
   margin-top: 5em;
 }
 .recomendation__block_name {
+  font-weight: 500;
+  font-size: 20px;
 }
 .recomendation__block__wrapper {
   display: flex;
