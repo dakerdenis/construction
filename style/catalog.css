@@ -290,7 +290,9 @@ padding: 0px 12px 12px 12px;
   display: flex;
   justify-content: center;
 }
-.item__makeorder input {
+.item__makeorder button {
+  font-family: Montserrat;
+  cursor: pointer;
   display: block;
   color: #020e28;
   background-color: #fff;
@@ -299,10 +301,10 @@ padding: 0px 12px 12px 12px;
   font-weight: 500;
   font-size: 23px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   transition: ease-in-out 0.2s;
 }
-.item__makeorder a:hover{
+.item__makeorder button:hover{
   background-color: #f55b14;
   color: #fff;
 }

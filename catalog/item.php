@@ -85,7 +85,7 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     </div>
                 </div>
                 <div class="item__makeorder">
-                    <input type="submit" value="Заказать">
+                    <button type="submit">Заказать</button>
                 </div>
             </form>
         </div>
