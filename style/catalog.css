@@ -305,7 +305,20 @@ padding: 0px 12px 12px 12px;
   background-color: #f55b14;
   color: #fff;
 }
-
+/***************************/
+.recomendation__block {
+  margin-top: 5em;
+}
+.recomendation__block_name {
+}
+.recomendation__block__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recomendation__block__wrapper .main__catalog__element{
+  transform: scale(0.8);
+}
 
 
 

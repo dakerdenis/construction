@@ -96,4 +96,65 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
             <p><?php echo $desc; ?></p>
         </div>
     </div>
+    <div class="recomendation__block">
+        <div class="recomendation__block_name">
+            Похожие товары:
+        </div>
+        <div class="recomendation__block__wrapper">
+            <?php
+            $query = "SELECT * FROM catalog LIMIT 3";
+            $select__catalog = mysqli_query($connection, $query);
+
+            while ($row = mysqli_fetch_assoc($select__catalog)) {
+                $id     = $row['id'];
+                $name   = $row['name'];
+                $image  = $row['image'];
+                $desc   = $row['description'];
+                $type   = $row['type'];
+                $price  = $row['price'];
+            ?>
+                <!---Элемент-->
+                <div class="main__catalog__element">
+                    <div class="main__catalog_element_wrapper">
+                        <!---фото--->
+                        <div class="main__catalog_element_img">
+                            <img width="100" src="./admin/includes/imgs/<?php echo $image; ?>" alt="">
+                        </div>
+                        <!--Описание и цена-->
+
+                        <div class="main__catalog_element_desc">
+                            <div class="main__catalog_element_desc_wrapper">
+                                <!--название -->
+                                <div class="main__catalog_element_desc-name">
+                                    <div class="_desc-name-p">
+                                        <?php echo $name; ?>
+                                    </div>
+                                    <div class="_desc-name-num">
+                                        код товара: <?php echo $id; ?>
+                                    </div>
+                                </div>
+
+                                <!--Описание-->
+                                <div class="main__catalog_element_desc-desc">
+                                    <p><?php echo $desc; ?></p>
+                                </div>
+
+                                <!--Кнопка подробнеее и кнопка купить--->
+                                <div class="main__catalog_element_desc-buy_price">
+                                    <a href="./catalog.php?catalog=item&item=<?php echo $id; ?>" class="element__desc-buy">
+                                        Купить
+                                    </a>
+                                    <div class="element__desc-price">
+                                        <?php echo $price; ?> AZN
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
+    </div>
 </div>
