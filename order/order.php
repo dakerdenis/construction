@@ -19,7 +19,20 @@ if (isset($_POST['amount'])) {
 <div class="make_order_wrapper">
 
     <div class="make_order_container">
-        
+        <form class="make_order__form" method="post">
+            <div class="make_order__desc">
+                Оформление заказа 
+            </div>
+            <div class="make_order__text">
+               Заполните форму и мы свяжемся с вами для дальнейшего обсуждения вашей покупки 
+            </div>
+
+            <!--элемент формы-->
+            <div class="make__order__form_element">
+
+            </div>
+
+        </form>
     </div>
 
 
