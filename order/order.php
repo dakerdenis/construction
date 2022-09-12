@@ -50,6 +50,9 @@ if (isset($_POST['amount'])) {
             </div>
             <!--Вариант доставки---->
             <div class="order__variants_wrapper">
+                <div class="order__shipment_desc">
+                    Доставка
+                </div>
                 <div class="order__variants_container">
                     <!--Вариант доставки--->
                     <div class="order_variant_block">
@@ -72,7 +75,43 @@ if (isset($_POST['amount'])) {
                     </div>
                 </div>
             </div>
-                        <!--Вариант оплаты---->
+            <!--Вариант оплаты---->
+            <div class="order__variants_wrapper">
+                <div class="order__payment_desc">
+                    Оплата
+                </div>
+                <div class="order__variants_container">
+                    <!--Вариант доставки--->
+                    <div class="order_variant_block">
+                        <label class="container">При получений
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="order_variant_block">
+                        <label class="container">Предоплата
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="order_variant_block">
+                        <label class="container">в кредит
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <!--Подарочная упаковка если требуется --->
+            <div class="order__make_as_gift">
+                <div class="order__make_as_gift-desc">
+                    Делаете подарок любимому человеку ? 
+                </div>
+                <div class="order__make_as_gift-text">
+                    Мы так же упаковываем нашу продукцию в лучшем виде !
+                </div>
+            </div>
 
         </form>
     </div>
