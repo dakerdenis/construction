@@ -39,15 +39,40 @@ if (isset($_POST['amount'])) {
                 <div class="make__order_element_desc">
                     Электронная почта
                 </div>
-                <input type="number" class="make__order_element_input">
+                <input type="email" class="make__order_element_input">
             </div>
             <!--элемент формы-->
             <div class="make__order__form_element">
                 <div class="make__order_element_desc">
                     Ваше имя
                 </div>
-                <input type="number" class="make__order_element_input">
+                <input type="text" class="make__order_element_input">
             </div>
+            <!--Вариант доставки---->
+            <div class="order__variants_wrapper">
+                <div class="order__variants_container">
+                    <!--Вариант доставки--->
+                    <div class="order_variant_block">
+                        <label class="container">Самовывоз
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="order_variant_block">
+                        <label class="container">Курьер
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="order_variant_block">
+                        <label class="container">Почта
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+                        <!--Вариант оплаты---->
 
         </form>
     </div>
