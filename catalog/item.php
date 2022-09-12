@@ -59,15 +59,15 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     <div class="item__order_desc"><?php echo $price ?> AZN</div>
                     <div class="item__order_amount"> Количество:
                         <label class="select" for="slct">
-                            <select id="slct" >
-                                <option value="" disabled="disabled" selected="selected">1</option>
-                                <option value="#">1</option>
-                                <option value="#">2</option>
-                                <option value="#">3</option>
-                                <option value="#">4</option>
-                                <option value="#">5</option>
-                                <option value="#">6</option>
-                                <option value="#">7</option>
+                            <select name="amount" id="slct" >
+                                <option value="1" disabled="disabled" selected="selected">1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
                             </select>
                             <svg>
                                 <use xlink:href="#select-arrow-down"></use>
