@@ -79,15 +79,15 @@ if (isset($_POST['amount'])) {
                     </div>
                     <div class="order_variant_block">
 
-                            <input type="radio" name="radio">
-                            <div class="order_variant_block_desc">
+                        <input type="radio" name="radio">
+                        <div class="order_variant_block_desc">
                             Курьер
                         </div>
                     </div>
                     <div class="order_variant_block">
 
-                            <input type="radio" name="radio">
-                            <div class="order_variant_block_desc">
+                        <input type="radio" name="radio">
+                        <div class="order_variant_block_desc">
                             почта
                         </div>
                     </div>
@@ -99,24 +99,27 @@ if (isset($_POST['amount'])) {
                     Оплата
                 </div>
                 <div class="order__variants_container">
-                    <!--Вариант доставки--->
+                    <!--Вариант Оплаты--->
                     <div class="order_variant_block">
-                        <label class="container">При получений
-                            <input type="radio" name="radio1">
-                            <span class="checkmark"></span>
-                        </label>
+
+                        <input type="radio" name="radio1">
+                        <div class="order_variant_block_desc">
+                            При получений
+                        </div>
                     </div>
                     <div class="order_variant_block">
-                        <label class="container">Предоплата
-                            <input type="radio" name="radio1">
-                            <span class="checkmark"></span>
-                        </label>
+
+                        <input type="radio" name="radio1">
+                        <div class="order_variant_block_desc">
+                            Забронировать
+                        </div>
                     </div>
                     <div class="order_variant_block">
-                        <label class="container">в кредит
-                            <input type="radio" name="radio1">
-                            <span class="checkmark"></span>
-                        </label>
+
+                        <input type="radio" name="radio1">
+                        <div class="order_variant_block_desc">
+                            Предоплата
+                        </div>
                     </div>
                 </div>
 
