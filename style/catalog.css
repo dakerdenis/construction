@@ -368,3 +368,61 @@ padding: 0px 12px 12px 12px;
 }
 .sortby__default {
 }
+
+
+/***************make order***********************/
+/***************make order***********************/
+/***************make order***********************/
+.make_order_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.make_order_container {
+  width: 100%;
+}
+.make_order__form {
+  width: 100%;
+
+}
+.make__order_desc_itomdesc{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.make_order_desc_conainer{
+  width: 50%;
+}
+.make_order__item__description{
+
+}
+.make_order__desc {
+}
+.make_order__text {
+}
+.make__order__form_element {
+}
+.make__order_element_desc {
+}
+.make__order_element_input {
+}
+.order__variants_wrapper {
+}
+.order__shipment_desc {
+}
+.order__variants_container {
+}
+.order_variant_block {
+}
+.container {
+}
+.checkmark {
+}
+.order__payment_desc {
+}
+.order__make_as_gift {
+}
+.order__make_as_gift-desc {
+}
+.order__make_as_gift-text {
+}

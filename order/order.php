@@ -20,11 +20,18 @@ if (isset($_POST['amount'])) {
 
     <div class="make_order_container">
         <form class="make_order__form" method="post">
-            <div class="make_order__desc">
-                Оформление заказа
-            </div>
-            <div class="make_order__text">
-                Заполните форму и мы свяжемся с вами для дальнейшего обсуждения вашей покупки
+            <div class="make__order_desc_itomdesc">
+                <div class="make_order_desc_conainer">
+                    <div class="make_order__desc">
+                        Оформление заказа
+                    </div>
+                    <div class="make_order__text">
+                        Заполните форму и мы свяжемся с вами для дальнейшего обсуждения вашей покупки
+                    </div>
+                </div>
+                <div class="make_order__item__description">
+                    
+                </div>
             </div>
 
             <!--элемент формы-->
@@ -106,7 +113,7 @@ if (isset($_POST['amount'])) {
             <!--Подарочная упаковка если требуется --->
             <div class="order__make_as_gift">
                 <div class="order__make_as_gift-desc">
-                    Делаете подарок любимому человеку ? 
+                    Делаете подарок любимому человеку ?
                 </div>
                 <div class="order__make_as_gift-text">
                     Мы так же упаковываем нашу продукцию в лучшем виде !
