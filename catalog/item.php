@@ -60,8 +60,7 @@ while ($row = mysqli_fetch_assoc($select__catalog)) {
                     <div class="item__order_amount"> Количество:
                         <label class="select" for="slct">
                             <select name="amount" id="slct" >
-                                <option value="1" disabled="disabled" selected="selected">1</option>
-                                <option value="1">1</option>
+                                <option value="1" selected="selected">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
