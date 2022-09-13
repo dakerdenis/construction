@@ -425,18 +425,43 @@ padding: 0px 12px 12px 12px;
   font-size: 16px;
 }
 .order__variants_wrapper {
+  width: 100%;
 }
 .order__shipment_desc {
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .order__variants_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .order_variant_block {
+  width: 31%;
+  position: relative;
+  height: 100px;
+  background-color: rgba(34, 50, 84,0.1);
 }
-.container {
+
+.order_variant_block input {
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
 }
-.checkmark {
+.order_variant_block_desc{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 .order__payment_desc {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 .order__make_as_gift {
 }

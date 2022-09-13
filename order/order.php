@@ -40,9 +40,9 @@ if (isset($_POST['amount'])) {
                     Мобильный телефон
                 </div>
                 <div class="make__order_element_input">
-                <input type="number" class="">
+                    <input type="number" class="">
                 </div>
-                
+
             </div>
             <!--элемент формы-->
             <div class="make__order__form_element">
@@ -50,9 +50,9 @@ if (isset($_POST['amount'])) {
                     Электронная почта
                 </div>
                 <div class="make__order_element_input">
-                <input type="email" class="">
+                    <input type="email" class="">
                 </div>
-                
+
             </div>
             <!--элемент формы-->
             <div class="make__order__form_element">
@@ -60,9 +60,9 @@ if (isset($_POST['amount'])) {
                     Ваше имя
                 </div>
                 <div class="make__order_element_input">
-                <input type="text" class="">
+                    <input type="text" class="">
                 </div>
-                
+
             </div>
             <!--Вариант доставки---->
             <div class="order__variants_wrapper">
@@ -71,23 +71,25 @@ if (isset($_POST['amount'])) {
                 </div>
                 <div class="order__variants_container">
                     <!--Вариант доставки--->
-                    <div class="order_variant_block">
-                        <label class="container">Самовывоз
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                    <div class="order_variant_block ">
+                        <input type="radio" name="radio">
+                        <div class="order_variant_block_desc">
+                            Самовывоз
+                        </div>
                     </div>
                     <div class="order_variant_block">
-                        <label class="container">Курьер
+
                             <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                            <div class="order_variant_block_desc">
+                            Курьер
+                        </div>
                     </div>
                     <div class="order_variant_block">
-                        <label class="container">Почта
+
                             <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                            <div class="order_variant_block_desc">
+                            почта
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,19 +102,19 @@ if (isset($_POST['amount'])) {
                     <!--Вариант доставки--->
                     <div class="order_variant_block">
                         <label class="container">При получений
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio1">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="order_variant_block">
                         <label class="container">Предоплата
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio1">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="order_variant_block">
                         <label class="container">в кредит
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio1">
                             <span class="checkmark"></span>
                         </label>
                     </div>
