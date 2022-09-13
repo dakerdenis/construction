@@ -101,7 +101,7 @@ if (isset($_POST['amount'])) {
                 <div class="order__variants_container">
                     <!--Вариант Оплаты--->
                     <div class="order_variant_block">
-
+                        <div class="hover__block__order"></div>
                         <input type="radio" name="radio1">
                         <div class="order_variant_block_desc">
                             При получений
