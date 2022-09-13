@@ -388,23 +388,41 @@ padding: 0px 12px 12px 12px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0px;
 }
 .make_order_desc_conainer{
   width: 50%;
 }
-.make_order__item__description{
 
-}
 .make_order__desc {
 }
 .make_order__text {
 }
+/********Описание товара***********/
+.make_order__item__description{
+  width: 50%;
+}
+/*******************/
 .make__order__form_element {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
 }
 .make__order_element_desc {
+  font-size: 16px ;
+  width: 20%;
 }
 .make__order_element_input {
+  width: 40%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #020e28;
+  padding: 7px 5px;
+}
+.make__order_element_input input {
+  width: 100%;
+  font-size: 16px;
 }
 .order__variants_wrapper {
 }
