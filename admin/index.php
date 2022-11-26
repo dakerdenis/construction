@@ -29,8 +29,9 @@
                 <div class="admin_input__block">
                     <div class="admin_input_desc">Password:</div>
                     <div class="admin_input_input">
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
+                    <br>
                 </div>
 
                 <div class="admin_input_block">
